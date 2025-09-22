@@ -1,0 +1,19 @@
+<%- include('header') %>
+<!-- Body Start -->
+        <div class="row mb-5">
+            <div class="col">
+                <form action="/submit" method="POST" autocomplete="off">
+                    Enter Name: <input type="text" name="myname">
+                    <br/><br/>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="row my-2">
+           <% if(message){ %>
+                <div class="col bg-secondary-subtle"><%= message %></div>
+            <%}%>    
+        </div>
+<!-- Body End -->
+<%- include('footer') %>
